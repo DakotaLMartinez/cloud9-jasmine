@@ -24,7 +24,7 @@ sys.inherits(ShellJasminePlugin, Plugin);
         var _self = this;
         var argv = message.argv || [];
 
-        this.spawnCommand('jasmine-node', ['--verbose', '--color', 'tests/'], message.cwd, 
+        this.spawnCommand('jasmine-node', ['--verbose', '--color', 'spec/'], message.cwd, 
             function(err) { // Error
                 _self.sendResult(0, message.command, {
                     code: 0,
